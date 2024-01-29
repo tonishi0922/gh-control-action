@@ -76,6 +76,7 @@ jobs:
       - name: Deploy
         run: echo "Deploying..."
   reort:
+    if: failure()
     runs-on: ubuntu-latest
     steps:
       - name: Output information
