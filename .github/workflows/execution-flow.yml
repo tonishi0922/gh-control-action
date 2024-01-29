@@ -79,7 +79,7 @@ jobs:
       - name: Deploy
         run: echo "Deploying..."
   reort:
-    needs: [lint, test]
+    needs: [lint, deploy]
     if: failure()
     runs-on: ubuntu-latest
     steps:
